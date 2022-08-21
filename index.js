@@ -15,7 +15,7 @@ app.get('/' , (req, res) => {
        GCC180 -  Computacao em Nuvem -Ufla    
     </h2>
     <h3>
-        Gabriel Nathan Alemida Silva
+        Gabriel Nathan Almeida Silva
     </h3>
 
     <br>

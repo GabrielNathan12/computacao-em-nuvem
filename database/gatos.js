@@ -15,5 +15,3 @@ const gatos = [
       porte: "pequeno",
     },
   ];
-
- 

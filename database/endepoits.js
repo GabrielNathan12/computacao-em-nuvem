@@ -6,8 +6,8 @@ require('./gatos');
 const getDog = async() => {
     const cliente = await conecatarBD();
     const BD = cliente.BD(cachorros);
-    const colecao = BD.colecao(id);
-    const dogs = await colecao.find({}).limit(3).toArray();
+    //const colecao = BD.colecao(id);
+    const dogs = await BD.find({}).limit(3).toArray();
     await cliente.close();
     return dogs;
 }

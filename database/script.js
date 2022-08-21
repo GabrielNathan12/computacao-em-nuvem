@@ -1,4 +1,6 @@
-
+require('/pessoas');
+require('/cachorros');
+require('/gatos');
 
 const {MySQL} = require('mysql');
 
@@ -7,7 +9,7 @@ const conecatarBD = async()=> {
         host:'localhost',
         user:'root',
         password:'password',
-    });
+    }, pessoas , cachorros , gatos);
     
     try{
         return cliente.connect();

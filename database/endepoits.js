@@ -2,8 +2,8 @@ const conecatarBD = require('./script');
 
 const getDog = async() => {
     const cliente = await conecatarBD();
-    const BD = cliente.BD('cachorros');
-    const colecao = BD.colecao('id');
+    const BD = cliente.BD('dataBase');
+    const colecao = BD.colecao('cachorros');
     const dogs = colecao.find({}).limit(10).toArray();
     await cliente.close();
     return dogs;
@@ -11,8 +11,8 @@ const getDog = async() => {
 
 const getCats = async() => {
     const cliente = await conecatarBD();
-    const BD = cliente.BD('gatos');
-    const colecao = BD.colecao('id');
+    const BD = cliente.BD('dataBase');
+    const colecao = BD.colecao('gatos');
     const cats = await colecao.find({}).limit(10).toArray();
     await cliente.close();
     return cats;
@@ -20,8 +20,8 @@ const getCats = async() => {
 
 const getUser = async() => {
     const cliente = await conecatarBD();
-    const BD = cliente.BD('pessoas');
-    const colecao = BD.colecao('id');
+    const BD = cliente.BD('dataBase');
+    const colecao = BD.colecao('pessoas');
     const user = await colecao.find({}).limit(10).toArray();
     await cliente.close();
     return user;

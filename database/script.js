@@ -1,3 +1,4 @@
+
 const {MySQL} = require('mysql');
 
 const conecatarBD = async()=> {

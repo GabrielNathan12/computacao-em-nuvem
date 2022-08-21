@@ -46,8 +46,7 @@ app.get('/pessoas', async(req , res)=>{
 });
 
 app.get('/cachorros', async(req , res)=>{
-    const dogs = await getDogs();
-    res.send('SELECT * FROM cachorros',dogs);
+    res.send('SELECT * FROM cachorros',res);
 });
 
 app.listen(PORT,() => console.log('Escutando na porta ' + PORT));

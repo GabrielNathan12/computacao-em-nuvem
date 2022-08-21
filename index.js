@@ -31,17 +31,17 @@ app.get('/' , (req, res) => {
     
 });
 
-app.get('/pessoas', async(req , res)=>{
+app.get('/database/pessoas', async(req , res)=>{
     const user = await getUser();
     res.send(user);
 });
 
-app.get('/cachorros', async(req , res)=>{
+app.get('/database/cachorros', async(req , res)=>{
     const dogs = await getDogs();
     res.send(dogs);
 });
 
-app.get('/gatos', async(req , res)=>{
+app.get('/database/gatos', async(req , res)=>{
     const cats = await getCats();
     res.send(cats);
 });

@@ -37,16 +37,17 @@ app.get('/' , (req, res) => {
 
 app.get('/gatos', async(req , res)=>{
     const cats = await getCats();
-    res.send(cats);
+    res.send('SELECT * FROM gatos',cats);
 });
 
 app.get('/pessoas', async(req , res)=>{
     const user = await getUser();
-    res.send(user);
+    res.send('SELECT * FROM pessoas',user);
 });
 
 app.get('/cachorros', async(req , res)=>{
-    res.send('SELECT * FROM cachorros',res);
+    const dogs = await getDogs();
+    res.send('SELECT * FROM cachorros',dogs);
 });
 
 app.listen(PORT,() => console.log('Escutando na porta ' + PORT));

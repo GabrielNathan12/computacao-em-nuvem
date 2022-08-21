@@ -2,7 +2,7 @@ const conecatarBD = require('./script');
 
 const getDog = async() => {
     const cliente = await conecatarBD();
-    const BD = cliente.BD('cachorros');
+    const BD = cliente.BD('baseDados');
     const prucurar = BD.get('cachorros1');
     const dogs = prucurar.find({}).limit(10).toArray();
     await cliente.close();
@@ -11,8 +11,8 @@ const getDog = async() => {
 
 const getCats = async() => {
     const cliente = await conecatarBD();
-    const BD = cliente.BD(gatos);
-    const prucurarID = BD.get(cachorros.json(id));
+    const BD = cliente.BD('baseDados');
+    const prucurarID = BD.get('gato1');
     const cats = await prucurarID.find({}).limit(10).toArray();
     await cliente.close();
     return cats;
@@ -20,8 +20,8 @@ const getCats = async() => {
 
 const getUser = async() => {
     const cliente = await conecatarBD();
-    const BD = cliente.BD(pessoas);
-    const prucurarID = BD.get(pessoas.json());
+    const BD = cliente.BD('baseDados');
+    const prucurarID = BD.get('pessoa1');
     const user = await prucurarID.find({}).limit(10).toArray();
     await cliente.close();
     return user;

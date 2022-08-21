@@ -15,3 +15,5 @@ const gatos = [
       porte: "pequeno",
     },
   ];
+
+  module.exports(gatos);

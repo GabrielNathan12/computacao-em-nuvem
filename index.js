@@ -23,9 +23,9 @@ app.get('/' , (req, res) => {
             End Poinst disponiveis no momento
         </h1>
 
-        <button onclick="window.location.href = 'https://app-nuvem-test.herokuapp.com/dogs'"><h3>/Dogs<h3></button>
-        <button onclick="window.location.href = 'https://app-nuvem-test.herokuapp.com/cats'"><h3>/Cats<h3></button>
-        <button onclick="window.location.href = 'https://app-nuvem-test.herokuapp.com/users'"><h3>/Users<h3></button>
+        <button onclick="window.location.href = 'https://app-nuvem-test.herokuapp.com/dogs'"><h3>/dogs<h3></button>
+        <button onclick="window.location.href = 'https://app-nuvem-test.herokuapp.com/cats'"><h3>/cats<h3></button>
+        <button onclick="window.location.href = 'https://app-nuvem-test.herokuapp.com/users'"><h3>/users<h3></button>
     `
    )
     

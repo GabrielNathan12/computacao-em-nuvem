@@ -16,3 +16,5 @@ const cachorros = [
       concluido: false,
     },
   ];
+
+  module.exports(cachorros);

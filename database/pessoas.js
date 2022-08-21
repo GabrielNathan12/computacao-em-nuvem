@@ -16,3 +16,4 @@ const pessoas = [
     },
   ];
   
+module.exports(pessoas);

@@ -15,7 +15,7 @@ const getDog = async() => {
 const getCats = async() => {
     const cliente = await conecatarBD();
     const BD = cliente.BD(gatos);
-    const colecao = BD.colecao(id);
+    const colecao = BD.colecao(gatos.filter(id => id));
     const cats = await colecao.find({}).limit(10).toArray();
     await cliente.close();
     return cats;

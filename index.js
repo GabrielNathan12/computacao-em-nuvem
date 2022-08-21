@@ -23,17 +23,17 @@ app.get('/' , (req, res) => {
         
         <button onclick="window.location.href = 'https://app-nuvem-test.herokuapp.com/dogs'">
             <h3>/dogs<h3>
-            
+            <br>
         </button>
-        <br>
+        
         <button onclick="window.location.href = 'https://app-nuvem-test.herokuapp.com/cats'">
             <h3>/cats<h3>
+            <br>
         </button>
-        <br>
         <button onclick="window.location.href = 'https://app-nuvem-test.herokuapp.com/user'">
             <h3>/user<h3>
+            <br>
         </button>
-        <br>
         `)
     }
   );

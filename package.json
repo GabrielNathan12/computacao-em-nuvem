@@ -1,0 +1,19 @@
+{
+  "name": "computacao-em-nuvem",
+  "version": "1.0.0",
+  "description": "trabalho computacao em nuvem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielNathan12/computacao-em-nuvem.git"
+  },
+  "author": "Gabriel Nathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielNathan12/computacao-em-nuvem/issues"
+  },
+  "homepage": "https://github.com/GabrielNathan12/computacao-em-nuvem#readme"
+}

@@ -1,8 +1,13 @@
 
+
 const {MySQL} = require('mysql');
 
 const conecatarBD = async()=> {
-    const cliente = new MySQL(process.env.MYSQL_URL,{ useNewUrlParser: true });
+    const cliente = new MySQL({
+        host:'localhost',
+        user:'root',
+        password:'password',
+    });
     
     try{
         return cliente.connect();

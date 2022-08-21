@@ -7,7 +7,7 @@ const getDog = async() => {
     const cliente = await conecatarBD();
     const BD = cliente.BD(dogs);
     const prucurarID = BD.get(dogs.id);
-    const dogs = BD.find({}).limit(10).toArray();
+    const dogs = prucurarID.find({}).limit(10).toArray();
     await cliente.close();
     return dogs;
 }
@@ -15,8 +15,8 @@ const getDog = async() => {
 const getCats = async() => {
     const cliente = await conecatarBD();
     const BD = cliente.BD(cats);
-    const procurarID = BD.get(cats.id);
-    const cats = await BD.find({}).limit(10).toArray();
+    const prucurarID = BD.get(cats.id);
+    const cats = await prucurarID.find({}).limit(10).toArray();
     await cliente.close();
     return cats;
 }
@@ -24,8 +24,8 @@ const getCats = async() => {
 const getUser = async() => {
     const cliente = await conecatarBD();
     const BD = cliente.BD(user);
-    const procurarID = BD.get(user.id);
-    const user = await BD.find({}).limit(10).toArray();
+    const prucurarID = BD.get(user.id);
+    const user = await prucurarID.find({}).limit(10).toArray();
     await cliente.close();
     return user;
 }

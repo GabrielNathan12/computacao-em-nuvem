@@ -16,7 +16,7 @@ const pessoas = [
       },
     {
       id: 99812,
-      descricao: "Almeida",
+      nome: "Almeida",
       idade: "58",
     },
   ];
@@ -34,7 +34,7 @@ const pessoas = [
     },
     {
       id: 655311,
-      descricao: "ragdoll",
+      raca: "ragdoll",
       porte: "pequeno",
     },
   ];
@@ -52,9 +52,8 @@ const pessoas = [
     },
     {
       id: 7382811,
-      descricao: "Golden retriever",
+      raca: "Golden retriever",
       porte: "grande",
-      concluido: false,
     },
   ];
 

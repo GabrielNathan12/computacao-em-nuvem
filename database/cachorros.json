@@ -1,0 +1,48 @@
+{    "cachorros1" :{
+        "id": 3321211,
+        "raca": "Buldoque",
+        "porte": "pequeno"
+    },
+    "cachorros2":{
+        "id": 433112,
+        "raca": "Pastor alemao",
+        "porte": "grande"
+    },
+    "cachorros3":{
+        "id": 7382811,
+        "raca": "Golden retriever",
+        "porte": "grande"
+    },
+    
+    "cat1" :{
+        "id": 1111123,
+        "raca": "Persa",
+        "porte": "pequeno"
+    },
+    "cat2":{
+        "id": 221311,
+        "raca": "siames",
+        "porte": "pequeno"
+    },
+    "cat3":{
+        "id": 655311,
+        "raca": "ragdoll",
+        "porte": "pequeno"
+    },
+    
+    "pessoa1":{
+        "id": 331122121,
+        "nome": "Gabriel",
+        "idade": "22"
+    },
+    "pessoa2":{
+        "id": 4411221,
+        "nome": "Nathan",
+        "idade": "24"
+    },
+    "pessoa3":{
+        "id": 99812,
+        "nome": "Almeida",
+        "idade": "58"
+    }
+}

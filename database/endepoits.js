@@ -1,21 +1,21 @@
 const conecatarBD = require('./script');
-const dogs = require('./cachorros');
-const cats = require('./gatos');
-const user = require('./pessoas');
+require('./cachorros');
+require('./gatos');
+require('./pessoas');
 
 const getDog = async() => {
     const cliente = await conecatarBD();
-    const BD = cliente.BD(dogs);
-    const prucurarID = BD.get(dogs.id);
-    const dogs = prucurarID.find({}).limit(10).toArray();
+    const BD = cliente.BD(cachorros);
+    const prucurar = BD.get(cachorros.json());
+    const dogs = prucurar.find({}).limit(10).toArray();
     await cliente.close();
     return dogs;
 }
 
 const getCats = async() => {
     const cliente = await conecatarBD();
-    const BD = cliente.BD(cats);
-    const prucurarID = BD.get(cats.id);
+    const BD = cliente.BD(gatos);
+    const prucurarID = BD.get(cachorros.json(id));
     const cats = await prucurarID.find({}).limit(10).toArray();
     await cliente.close();
     return cats;
@@ -23,8 +23,8 @@ const getCats = async() => {
 
 const getUser = async() => {
     const cliente = await conecatarBD();
-    const BD = cliente.BD(user);
-    const prucurarID = BD.get(user.id);
+    const BD = cliente.BD(pessoas);
+    const prucurarID = BD.get(pessoas.json());
     const user = await prucurarID.find({}).limit(10).toArray();
     await cliente.close();
     return user;

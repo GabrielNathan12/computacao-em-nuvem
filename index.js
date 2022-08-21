@@ -18,19 +18,22 @@ app.get('/' , (req, res) => {
      <br>
       <br>
         <h1>
-            End Poinst disponiveis no momento
+            End Poinst livres
         </h1>
         
         <button onclick="window.location.href = 'https://app-nuvem-test.herokuapp.com/dogs'">
             <h3>/dogs<h3>
+            
         </button>
-        
+        <br>
         <button onclick="window.location.href = 'https://app-nuvem-test.herokuapp.com/cats'">
-            <h3>/cats<h3></button>
-        
+            <h3>/cats<h3>
+        </button>
+        <br>
         <button onclick="window.location.href = 'https://app-nuvem-test.herokuapp.com/user'">
             <h3>/user<h3>
         </button>
+        <br>
         `)
     }
   );

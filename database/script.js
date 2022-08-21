@@ -1,8 +1,7 @@
-require('dotnev').config;
-const {MySQL} = required('MySQL');
+const {MySQL} = require('mysql');
 
 const conecatarBD = async()=> {
-    const cliente = new MySQL(process.env.MYSQL_URL,{useNewParce:true});
+    const cliente = new MySQL(process.env.MYSQL_URL,{ useNewUrlParser: true });
     
     try{
         return cliente.connect();

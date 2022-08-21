@@ -4,20 +4,22 @@
   "description": "trabalho computacao em nuvem",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GabrielNathan12/computacao-em-nuvem.git"
   },
   "author": "Gabriel Nathan",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/GabrielNathan12/computacao-em-nuvem/issues"
   },
   "homepage": "https://github.com/GabrielNathan12/computacao-em-nuvem#readme",
   "dependencies": {
     "dotenv": "^16.0.1",
+    "dotnet": "^1.1.4",
     "express": "^4.18.1",
     "mysql": "^2.18.1"
   }

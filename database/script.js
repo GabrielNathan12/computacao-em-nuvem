@@ -1,4 +1,3 @@
-const BD = require('./dataBase');
 
 const {MySQL} = require('mysql');
 
@@ -7,7 +6,7 @@ const conecatarBD = async()=> {
         host:'localhost',
         user:'root',
         password:'password',
-    }, BD);
+    });
     
     try{
         return cliente.connect();

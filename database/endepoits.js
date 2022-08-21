@@ -24,7 +24,7 @@ const getUser = async() => {
     const colecao = BD.colecao('pessoas');
     const user = await colecao.find({}).limit(10).toArray();
     await cliente.close();
-    return cats;
+    return user;
 }
 
 module.exports = {getDog , getCats , getUser};

@@ -1,12 +1,10 @@
 const conecatarBD = require('./script');
-require('./cachorros');
-require('./gatos');
-require('./pessoas');
+
 
 const getDog = async() => {
     const cliente = await conecatarBD();
-    const BD = cliente.BD(cachorros);
-    const prucurar = BD.get(cachorros.json());
+    const BD = cliente.BD('cachorros');
+    const prucurar = BD.get('cachorros1');
     const dogs = prucurar.find({}).limit(10).toArray();
     await cliente.close();
     return dogs;

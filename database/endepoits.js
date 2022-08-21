@@ -1,5 +1,8 @@
 const conecatarBD = require('./script');
+const express = require('express');
+const app = require('express');
 
+app.use(express.json());
 
 const getDog = async() => {
     const cliente = await conecatarBD();

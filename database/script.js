@@ -6,6 +6,7 @@ const conecatarBD = async()=> {
         host:'localhost',
         user:'root',
         password:'password',
+        database:'teste'
     });
     
     try{

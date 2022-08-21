@@ -6,6 +6,7 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
+
 app.get('/' , (req, res) => {
    res.send(`<h1> Servidor Web em nuvem </h1>
     <h2>
@@ -46,7 +47,7 @@ app.get('/pessoas', async(req , res)=>{
 
 app.get('/cachorros', async(req , res)=>{
     const dogs = await getDogs();
-    res.send(dogs);
+    res.send('SELECT * FROM cachorros',dogs);
 });
 
 app.listen(PORT,() => console.log('Escutando na porta ' + PORT));

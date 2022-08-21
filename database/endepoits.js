@@ -1,7 +1,4 @@
 const conecatarBD = require('./script');
-require('./cachorros');
-require('./pessoas');
-require('./gatos');
 
 const getDog = async() => {
     const cliente = await conecatarBD();

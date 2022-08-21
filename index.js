@@ -12,7 +12,7 @@ app.get('/' , (req, res) => {
         Servidor Web em nuvem
     </h1>
     <h2>
-       GCC180 -  Computacao em Nuvem - Ufla    
+       GCC180 -  Computacao em Nuvem -Ufla    
     </h2>
     <h3>
         Gabriel Nathan Almeida Silva
@@ -31,17 +31,17 @@ app.get('/' , (req, res) => {
     
 });
 
-app.get("/pessoas:id", async(req , res)=>{
+app.get('/pessoas', async(req , res)=>{
     const user = await getUser();
     res.send(user);
 });
 
-app.get("/cachorros:id", async(req , res)=>{
+app.get('/cachorros', async(req , res)=>{
     const dogs = await getDogs();
     res.send(dogs);
 });
 
-app.get("/gatos:id", async(req , res)=>{
+app.get('/gatos', async(req , res)=>{
     const cats = await getCats();
     res.send(cats);
 });

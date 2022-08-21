@@ -17,4 +17,3 @@ const cachorros = [
     },
   ];
 
-  module.exports(cachorros);
